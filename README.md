@@ -81,34 +81,33 @@ square of given integer number.
 Now we have 2 files in our solution
 
 Multiple Files Article.cpp
+```cpp
+#include <iostream>
 
-> \#include \<iostream\>
-> 
-> int main()
-> 
-> {
-> 
-> int num = 0;
-> 
-> std::cout \<\< "The a number to find it's square: ";
-> 
-> std::cin \>\> num;
-> 
-> std::cout \<\< "The square of the number" \<\< num \<\< " is "
-> \<\<square(num);
-> 
-> }
+int main()
 
+{
+
+  int num = 0;
+
+  std::cout << "The a number to find it's square: ";
+
+  std::cin >> num;
+
+  std::cout << "The square of the number" << num << " is "<<square(num);
+
+}
+```
 Squre.cpp
+```cpp
+int square(int num)
 
-> int square(int num)
-> 
-> {
-> 
-> return (num \* num);
-> 
-> }
+{
 
+  return (num \* num);
+
+}
+```
 If You tried to run the program now.
 
 (To run the code, on the menu bar, choose Debug, ***Start without
@@ -133,27 +132,26 @@ Step 8 – Add a forward declaration in our main file(Multiple Files
 Article.cpp) like this.
 
 Multiple Files Article.cpp
+```cpp
+#include <iostream>
 
-> \#include \<iostream\>
-> 
-> int square(int num); //This will tell the compiler that this function is
-> written somewhere.
-> 
-> int main()
-> 
-> {
-> 
-> int num = 0;
->
-> std::cout \<\< "The a number to find it's square: ";
-> 
-> std::cin \>\> num;
-> 
-> std::cout \<\< "The square of the number" \<\< num \<\< " is "
-> \<\<square(num);
-> 
-> }
+int square(int num); //This will tell the compiler that this function is
+written somewhere.
 
+int main()
+
+{
+
+  int num = 0;
+  std::cout << "The a number to find it's square: ";
+
+  std::cin >> num;
+
+  std::cout << "The square of the number" << num << " is "
+  <<square(num);
+
+}
+```
 If You tried to run the program now. You will see that the program runs
 this time perfectly.
 
